@@ -1,0 +1,85 @@
+html {
+    font-family: 'Myriad Pro Regular';
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .2s;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: pink;
+}
+
+header div.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header hr {
+    width: 110%;
+}
+
+header div.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+header div.navbar a:hover {
+    font-size: 1.5em;
+}
+
+header > div > * {
+    margin: 0.1em;
+}
+
+span.purpletext {
+    animation: purpletext 2s ease 0s infinite;
+}
+
+@keyframes purpletext {
+    0% {color: purple;}
+    50% {color: rgb(185, 0, 185)}
+    100% {color: purple;}
+}
+
+main {
+    flex-grow: 1;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('fontes/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Light'), url('fontes/MyriadPro-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold'), url('fontes/MYRIADPRO-BOLD.woff') format('woff');
+}
