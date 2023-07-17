@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    color: rgb(230, 230, 230);
+    font-family: 'Myriad Pro Regular';
+    background: #010101 url(imagens/wip.jpg) no-repeat right bottom;
+}
+
+body,
+body div {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.content {
+    max-width: 20%;
+}
+
+div.nav {
+    max-height: 50px;
+    max-width: 100%;
+    flex-direction: row;
+    gap: 2em;
+}
+
+div.nav img {
+    margin: auto;
+    max-height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    color: white;
+}
+
+div.header * {
+    margin: 0.1em;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+a:hover {
+    text-shadow: 0px 0px 30px #fff;
+    text-decoration: underline;
+}
+
+.botao {
+    height: 100%;
+    width: 100%;
+    transition: .2s;
+}
+
+.textoBotao {
+    display: none;
+    position: absolute;
+    margin-top: 90px;
+    font-weight: bolder;
+}
+
+.botao:hover {
+    margin: 0 0 10px 0;
+}
+
+.botao:hover + .textoBotao {
+    display: block;
+}
+
+@media screen and (max-width: 807px) {
+    
+    div.content {
+        max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 563px) {
+    
+    div.content {
+        max-width: 70%;
+    }
+
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('fontes/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Light'), url('fontes/MyriadPro-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold'), url('fontes/MYRIADPRO-BOLD.woff') format('woff');
+}
