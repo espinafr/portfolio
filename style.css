@@ -6,7 +6,9 @@ body {
     height: 100vh;
     color: rgb(230, 230, 230);
     font-family: 'Myriad Pro Regular';
-    background: #010101 url(imagens/wip.jpg) no-repeat right bottom;
+    background: url(imagens/LightBeam.png) no-repeat left, url(imagens/LightBeamRight.png) no-repeat right;
+    background-color: #010101;
+    background-size: cover;
 }
 
 body,
@@ -50,7 +52,7 @@ a {
     cursor: pointer;
 }
 
-a:hover {
+a:hover, a:active {
     text-shadow: 0px 0px 30px #fff;
     text-decoration: underline;
 }
@@ -68,12 +70,20 @@ a:hover {
     font-weight: bolder;
 }
 
-.botao:hover {
+.botao:hover, .botao:active {
     margin: 0 0 10px 0;
 }
 
-.botao:hover + .textoBotao {
+.botao:hover + .textoBotao,
+.botao:active + .textobotao {
     display: block;
+}
+
+@media screen and (max-width: 1380px) {
+    body {
+        background: url(imagens/LightBeam.png) no-repeat left;
+        background-color: #010101;
+    }
 }
 
 @media screen and (max-width: 807px) {
